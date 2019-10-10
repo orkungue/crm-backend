@@ -1,0 +1,2 @@
+class CustomerOwner < ApplicationController
+end

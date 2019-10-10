@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  address: MyString
+  comment: MyText
+  employees: 1
+  is_broke: false
+  customer_grade_id: 1
+
+two:
+  name: MyString
+  address: MyString
+  comment: MyText
+  employees: 1
+  is_broke: false
+  customer_grade_id: 1

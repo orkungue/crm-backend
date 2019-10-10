@@ -1,0 +1,420 @@
+
+#delete from application
+    ###LÄUFT ÜBER VUE oder braucht man nicht
+
+      def get_default_time_zone
+      end
+
+      def get_default_time_zone_for_js
+      end
+
+      def javascript_includes_cached()
+        #KILL
+      end
+      def javascript_includes_uncached()
+        #KILL
+      end
+      def stylesheet_includes_cached()
+        #KILL
+      end
+      def stylesheet_includes_uncached()
+        #KILL
+      end
+
+      def render_partial_path
+        #ist im pagebuilder
+      end
+      def docx_to_pdf
+      #why in application? --> über vue wenn man auf doc to pdf klickt params übergeben und convertieren
+      end
+      def print_pdf_by_template
+        ##kill fckn wickedpdf
+        ##im printcontroller?
+      end
+    ###END
+
+
+  def call_log()
+    def log_list_error(str)
+    end
+    # logging sollten wir vielleicht anders lösen als bisher
+  end
+  def document_type_lookup
+  end
+
+        # Save neuprogrammieren
+          def set_session
+            ##SESSION Metthode weniger benutzen
+          end
+          def check_auth()
+          end
+        #
+
+    ###check i njiad bljad | ich hoffe unnötige sachen
+      def rescue_action_in_public(exception)
+        # http://www.codyfauser.com/2008/7/4/rails-http-status-code-to-symbol-mapping
+        # sometimes the instance varibale works, sometimes the local one...
+        $ex = exception
+        render({ :template => "error/#{response_code_for_rescue(exception).to_s}", :layout => true })
+        $ex = nil
+      end
+      def validate_cascade
+        #KILL wird in vue dirket gespeicht
+      end
+      def save_cascade
+        #kill wird in vue dirket gespeichert
+      end
+      def bool_to_text(value)
+        #kill
+      end
+      def transform_to_grouptype( to_transform=nil )
+        #i think läuft alles über vue
+      end
+      def transform_to_string( to_transform=nil, object=nil )
+        # what the ??
+      end
+      def deselect_customer()
+        # Deselects the current selected customer.
+        #Kidding?
+        set_user_setting(:customer_id, nil)
+        session[:customer_info_text] = nil
+      end
+
+        def create_month_intervals(num_months, start_date = Date.today)
+        end
+
+        def daemon_running?(daemon_name)
+          #sollte alles im daemon.rb stehen
+          #vielleicht sogar komplett auslagern
+        end
+        def transform_to_grouptype( to_transform=nil )
+          ##wird nun durch routes geregelt
+        end
+
+        def findGroupDefinition(group_controller_name, group_type, group_definition_id = nil)
+          #ist nun im pagebuilder
+        end
+
+        def create_month_intervals(num_months, start_date = Date.today)
+        end
+  def parse_string(s)
+  end
+
+
+  def render_exception(exception)
+
+  end
+
+  def select_customer(customer)
+    ## select it from recent item .model
+  end
+
+  def set_rct_itm(caption, item_id = nil, result = nil)
+  end
+  def set_recent_item(caption, item_id = nil, controller = nil, icon_name = nil)
+  end
+
+  def cis_doublegrid_session_handler(controller_main, controller_lookup, work_id, is_assign, max_entry_count)
+  end
+  def save_params
+  end
+
+    def build_conditions_from_filter_panel(controller = params[:controller], action = params[:action], includes = nil)
+    end
+
+
+
+    def get_content_width
+    END
+    def no_cache
+    end
+
+    def set_url_prefix
+    end
+
+    def show_gc_stats
+    end
+    def dispatcher_get_customer
+    end
+
+    def dispatcher_get_customer_id
+    end
+    def render_sidebar_quick_create
+    end
+
+    def assign_tmp
+    end
+    def assign_tmp_new
+    end
+    def assign_new
+    end
+
+    def unassign_new
+    end
+
+    def quick_edit
+    end
+    def quick_new
+    end
+    def transform_to_label( to_transform=nil, object=nil )
+      end
+
+      def reload_select_reload_data
+        #kein sinn
+      end
+  def change_option_select
+    #& def load_select_content
+  end
+
+        def reload_box
+          # reload / UPload reload läuft über axios request bis fertig ist. Uploads in zukunft wie folg speichern: blob und id in upload_data und weitere tabelle mit id verknüpfung
+        end
+
+        def load_grid_data
+        end
+
+def show_shipment_flows
+end
+
+def render_group_definition
+end
+
+def render_editable_grid_row()
+end
+
+def get_facebook_connection
+end
+
+def render_sidebar_my_activities_descr
+end
+def findGroupObject(gd)
+end
+def createGroupObject(gd)
+end
+  ###in db gibt es ein feld |condtions| wenn dieser gefüllt ist wird der in einem object gespeichert und zurückgegegebn PageBuilderController
+  def createBlockConditions(bd, options = {})
+  end
+  def createBlockObject(bd, options = {})
+  end
+  def findBlockObject(bd, options = {})
+  end
+  ###end
+    def minipanel_load_more
+    end
+
+      #ZUsammenführen
+      def upload_select
+      end
+
+      def image_upload_select
+      end
+      def template_select
+      end
+
+      def set_column_width
+      end
+      def set_column_index
+      end
+      def set_column_visible
+      end
+      def list_json_new
+      end
+
+
+      def destroy_grid_partial
+      end
+
+      def build_right_name(right_controller, right_type)
+      end
+
+      def destroy_partial
+      end
+      def setValue(object, at, val)
+      end
+
+      def ajax_assign
+      end
+      def ajax_unassign
+      end
+      def ajax_unassign_tmp
+      end
+      def phone_search
+      end
+      def phone_search_show_caller
+      end
+      def dangerous_good_lookup
+      end
+
+      def generator_create
+      end
+      def show_revisions
+      end
+      def find_option_id_from_controller_and_condition
+      end
+      def removeHtmlNice(value)
+      end
+      def remove_html_fast(value, options = {})
+      end
+      def getBodyFromHTML(value)
+      end
+      def external_link_redirect
+      end
+      def render_single_filter_new(grid_id, filtergroup, fieldlist, options = {})
+      end
+      def create_triangle_url(bd, options = {})
+      end
+      def global_append_js(js_code)
+      end
+      def get_string_of_condition_array(arr)
+      end
+      def restore_temp_filters
+      end
+      def get_default_template_header()
+      end
+      def get_default_template_footer()
+      end
+      def get_default_template_logo()
+      end
+      def render_block_definition_partial
+      end
+      def background_check
+      end
+    ###end of shit
+
+
+
+
+##NEEDiT
+
+def get_actual_newstickers
+end
+def get_app_revision()
+end
+def getContentType(extname)
+end
+
+def document_type_lookup
+end
+
+def set_default_filters
+end
+def get_filter(bd, quick = false)
+end
+def save_favorites
+end
+
+  #ZUsammenführen
+  def country_lookup
+  end
+
+  def state_lookup
+  end
+
+  def street_lookup
+  end
+  def city_lookup
+  END
+  def relation_lookup
+  end
+  def similar_customer_lookup
+  end
+  def similar_lead_lookup
+  end
+  #end
+
+
+def autocomplete_lookup
+end
+
+def create_partial
+END
+def update_partial
+end
+
+  def quick_select
+  end
+
+    def quick_select_set_filter(gd)
+    end
+def quick_select_mapping
+end
+
+def reload_selection
+end
+def createSelectOptions
+end
+def send_mail_new(options)
+end
+def template_select
+end
+
+
+
+def save_recent_mapping(controller_name, object_id)
+end
+
+def format_datetime(the_format, the_datetime = nil, to_time_zone = true)
+end
+
+def restore_user_settings()
+end
+def map_name_to_reflection(model, path, options = model.standard_includes)
+end
+
+helper_method(:bool_to_text)
+
+  # "helper_method(:bool_to_text)"
+  #
+  # Returns boolean <tt>value</tt> converted to string containing "Yes" or "No" (localized).
+  #
+  def bool_to_text(value)
+
+    if(value and value.to_s != '0')
+      return(_('#cApplication.bool_to_text.value.yes'))
+    else
+      return(_('#cApplication.bool_to_text.value.no'))
+    end
+
+
+def multi_edit
+  #KILL braucht man das?
+end
+def multi_update
+  #KILL cause kann gleich gespeochert werden: click doc div öffnet sich mit speichern button direkter axios request ohne reload
+end
+
+def load_language()
+end
+
+# Removes an entry from the recent item list.
+# Should be called from any destroy action when the object is a recent item.
+#
+def destroy_recent_item(item_id = nil, controller = nil)
+end
+
+  def set_time_zone
+    #maybe anders
+  end
+  def get_user_setting(setting_name, default_value = nil)
+  end
+    def set_layout
+       #&  sollten zusammen sein
+      #NEED cause 1mal layout aufrufen
+    end
+
+###ALLE RECHTE SACHEN mal überdenken
+  ##wird zum teil im model gemacht
+    def check_right_of_access
+      ##NEEDiT
+    end
+    def checkRight(options = {})
+    end
+    def check_object_right()
+    end
+
+    def concatenate_conditions
+    end
+    def unlink_conditions
+    end
+    #end
+###END
