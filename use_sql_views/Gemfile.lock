@@ -6,14 +6,20 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    rake (10.4.2)
+    coderay (1.1.2)
+    method_source (0.9.2)
+    pry (0.12.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    rake (13.0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   bundler (~> 1.16)
-  rake (~> 10.0)
+  pry
+  rake (~> 13.0)
   use_sql_views!
 
 BUNDLED WITH
