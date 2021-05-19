@@ -10,7 +10,7 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'rdoc'
 #gem 'use_sql_views'
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 4.3'
 gem 'jwt_sessions', '~> 2'
 #gem 'simple_command'
 #gem 'bcrypt', '~> 3.1.7'
